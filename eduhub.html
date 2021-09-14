@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eduhub</title>
+        <style>
+            * {margin: 0; padding: 0;}
+            div#container {
+                width: 900px;
+                height: auto;
+                background-color: lightgreen;
+                /* margin-left: auto; */
+                /* margin-right: auto; */
+                margin: 0 auto;
+            }
+            nav {
+                width: 900px;
+                height: 80px;
+                background-color: #6d418f;
+                padding-top: 20px;
+                padding-left: 50px;
+                box-sizing: border-box;
+            }
+            nav h1, nav ul, nav ul li {
+                display: inline-block;
+            }
+            nav h1 {
+                margin-right: 50px;
+            }
+            nav ul li { 
+                margin-right: 20px;                
+            }
+            section {
+                width: 900px;
+                height: 300px;
+                background-color: lightblue;
+                text-align: center;
+                padding-top: 100px;
+                box-sizing: border-box;
+            }
+            section.signup-section {
+                background-color: honeydew;
+            }
+            div.content {
+                width: 900px;
+                height: 500px;
+                background-color: purple;
+                
+                
+            }
+            div.content-header {
+                text-align: center;
+                padding: 60px 0;
+                box-sizing: border-box;
+            }
+            div.content-holder {
+                text-align: center;
+                background-color:greenyellow;
+                padding: 30px 0;
+                height: 360px;
+                box-sizing: border-box;
+            }
+            div.offer-image, p.offer-para {
+                display: inline-block;
+                width: 400px;
+                height: 300px;
+                background-color: green;
+                vertical-align: middle;
+            }
+            div.package-list {
+                display: inline-block;
+                width: 200px;
+                height: 250px;
+                background-color: white;
+                margin: 0 10px;
+                border-radius: 30px;
+                box-shadow: 2px 2px 10px black;
+                overflow: hidden;
+            }
+
+            div.package-list img {
+                width: 100%;
+                height: 100%;
+            }
+            div.student-list {
+                width: 200px;
+                height: 200px;
+                background-color: white;
+                display: inline-block;
+                margin: 10px 15px;
+                border-radius: 50%; /*circle*/
+                overflow: hidden;
+            }
+            div.student-list img {
+                width: 100%;
+                height: 100%;
+            }
+
+            div.submit-button {
+                width: 200px;
+                height: 50px;
+                background-color: orange;
+                text-align: center;
+                padding: 10px 0;
+                box-sizing: border-box;
+                border-radius: 30px;
+                border-width: 4px;
+                border-style: solid;
+                border-color: black;
+            }
+
+            
+
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <nav>
+                <h1>Eduhub</h1>
+
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+
+            <section class="section">
+                <h2>Eduhub <br/> Get Smart!</h2>
+            </section>
+            <section class="signup-section">
+                <h2>Sign Up Now!</h2>
+                <form>
+                    <input placeholder="Your Email" type="email" />
+                    <button>Sign Up</button>
+                </form>
+            </section>
+
+            <div class="content">
+                <div class="content-header">
+                    <h2>What We Offer</h2>
+                </div>
+
+                <div class="content-holder">
+                    <div class="offer-image"></div>
+                    <p class="offer-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+
+            </div>
+
+            <div class="content">
+                <div class="content-header">
+                    <h2>Our Packages</h2>
+                </div>
+
+            <div class="content-holder">
+                <div class="package-list">
+                    <img src="images/landscape1.jpg">
+                </div>
+                <div class="package-list">
+                    <img src="images/landscape2.jpg">
+                </div>
+                <div class="package-list">
+                    <img src="images/landscape3.jpg">
+                </div>
+            </div>
+
+            </div>
+            
+
+            <div class="content">
+                <div class="content-header">
+                    <h2>What Students Say</h2>
+                </div>
+
+                <div class="content-holder">
+                    <div class="student-list">
+                        <img src="images/avatar1.jpg">
+                    </div>
+                    <div class="student-list">
+                        <img src="images/avatar2.jpg">
+                    </div>
+                    <div class="student-list">
+                        <img src="images/avatar3.jpg">
+                    </div>
+
+                    <div class="submit-button">
+                        <p>Apply Now!</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        
+    </body>
+</html>
+
+<!-- to make a button, make a rectangle div and make a <p> in the center, text-align center, padding top and bottom, compress use border box and make it rounded with border radius -->
+
+    <!-- to add default style just use * {margin;padding;box-sizing;text-font;etc, so that dont have to keep repeating box sizing and the same command over and over} -->
+
+            <!-- difference between margin and padding, margin applies to all four sides but doesn't affect the box size(can be both negative and positive value), padding affects the size of the box, mostly used with box sizing cause its compresses the padding into the box size. usually used when compressing something -->
+
+            <!-- box shadow: x-value; y-value; blur-value; colour -->
+
+            <!-- in maths we have x and y value, in browser, x and y heads from left to right up to down so if you put a value in y, it will be pushing will be pushing downwards, can also use rgba for shadowing (0,0,0,0) last being the opacity/aplha value -->
+
+            <!-- inside the container we put in all the section and content. it only until here then it cut off dy. its because we gave the container a fixed value. to avoid it we can use height:auto; to auto adjust to whatever length/height the container is. -->
+
+        <!-- making a gap on left and right using margin -->
+        <!-- challange later on today to recreate given image, can ignore the background image text, colour can just blend -->
+        <!-- come up with a new repo and push it to the GitHub  -->
+        <!-- tomorrow will be working  on designing external css, outclick and background image and adding text on top of image text, conditioning and linking pages -->
+        <!-- responsive, animations, width, tagging and now is lunch timeeeeeeeeeeee -->

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Relap Website</title>
+        <style>
+            * {margin: 0; padding: 0;}
+            div#container {
+                width: 900px;
+                height: auto;
+                background-color: white;
+                margin: 0 auto;
+            }
+            nav {
+                width: 900px;
+                height: 80px;
+                background-color: #6d41bf;
+                padding-top:20px;
+                padding-left: 5px;
+                box-sizing: border-box;
+            }
+            nav h1, nav ul, nav ul li, div.contact-button {
+                display: inline-block;
+                color: white;
+                margin-top: -30px;
+                box-sizing: border-box;
+            }
+            nav h1 {
+                margin-top: 3px;
+                margin-left: 5px;
+            }
+            nav ul {
+                margin-left: 120px;
+            }
+            nav ul li {
+                margin-right: 10px;
+                font-size: 18px;
+            }
+            div.contact-button {
+                margin-left: 120px;
+                margin-bottom: auto;
+                font-size: 15px;
+                background-color: #6d41bf;
+                text-align: center;
+                padding: 10px 50px;
+                box-sizing: border-box;
+                border-radius: 20px;
+                border-width: 2px;
+                border-style: solid;
+                border-color: white;
+            }
+            div.content1 {
+                width: 900px;
+                height: 350px;
+                background-color: #8e51c7;
+                display: flex;
+            }
+            div.content-left {
+                width: 350px;
+            }
+            div.content-right {
+                width: 550px;
+                text-align: center;
+            }
+            div.content-left, div.content-right {
+                display: inline-block;
+            }
+
+
+            h1.Title { 
+                text-align: left;
+                color: white;
+                padding:50px 0 0 80px;
+                box-sizing: border-box;
+                width: 30%
+            }
+            p.para-1 {
+                text-align: left, justify;
+                color: white;
+                padding: 0 0 15px 80px;
+                box-sizing: border-box;
+                font-size: 8px;
+            }
+            div.exploreButton {
+                margin-left: 80px;
+                width: 150px;
+                height: 30px;
+                background-color: orange;
+                text-align: center;
+                padding: 5px 0 0 0;
+                box-sizing: border-box;
+                border-radius: 30px;
+                border-color: orange;
+                color: white;
+                font-size: 15px;
+            }
+            div.bannerPic {  
+                width: 300px;
+                height: 300px;
+                margin: 50px 0 0 0;
+                overflow: hidden;
+                vertical-align: middle;
+                display: inline-block;
+             } 
+             div.bannerPic img {
+                 width: 100%;
+                 height: 100%;
+             }
+             div.content2 {
+                 width: 900px;
+                 height: 110px;
+                 background-color: #fdf1ff;
+                 display: flex;
+             }
+             div.content2-left {
+                 width: 350px;
+             }
+             div.content2-right {
+                 width: 550px;
+                 text-align: left, justify;
+             }
+            
+             h5 {
+                 text-align: left;
+                 padding: 50px 0 0 80px;
+                 box-sizing: border-box;
+             }
+             h3 {
+                 text-align: left;
+                 padding: 0 0 0 80px;
+                 box-sizing: border-box;
+             }
+             p.para2 {
+                 margin-left: 80px;
+                 font-size: 9px;
+                 padding: 40px 150px 0 00px;
+                 box-sizing: border-box;
+             }
+             nav.listTwo {
+                 width: 900px;
+                 height: 300px;
+                 background-color: #fdf1ff;
+                 color: black;
+                 margin-right: 30px;
+             }
+             nav.listTwo ul, nav.listTwo ul li {
+                 display: inline-block;
+                 color: black;
+                 padding: -30px 0px 0 0;
+                 box-sizing: border-box;
+             }
+             div.threePic {
+                 text-align: center;
+                 padding: 30px 0;
+                 height: 300px;
+                 box-sizing: border-box;
+             }
+             div.whitePic {
+                 display: inline-block;
+                 width: 250px;
+                 height: 150px;
+                 background-color: gray;
+                 margin: 0px 10px;
+                 overflow: hidden;
+
+             }
+             div.bluePara {
+                 width: 900px;
+                 height: 350px;
+                background-color: #3023ae;
+                background-image: url(day2_challanges/day2_challanges/images/about_bg.png);
+                background-size: cover;
+                display: flex;
+             }
+             div.blueLeft {
+                 width: 350px;
+                 height: 350px;
+                 
+             }
+             div.blueLeft img {
+                 width: 100%;
+                 height: 100%;
+                 padding-left: 50px;
+             }
+             div.blueRight {
+                 width: 550px;
+                 text-align: left, justify;
+                 height: 350px;
+                 padding: 100px 100px 0 100px;
+                 box-sizing: border-box;
+                 font-size: 15px;
+                 color: white;
+
+             }
+             div.boxPara {
+                 width: 900px;
+                 height: 500px;
+                 background-color: #dfd9d9;
+                 text-align: center;
+             }
+             div.fugiat {
+                height: 50px;
+                padding-top: 30px;
+                box-sizing: border-box;
+                font-size: small;
+             }
+             div.aliquam {
+                 font-size: smaller;
+                 padding: 30px 100px 0 100px;
+                 box-sizing: border-box;
+             }
+             div.boxesImage {
+                 text-align: center;
+                 padding: 40px 0 20px 0;
+                 height: 200px;
+                 box-sizing: border-box;
+             }
+             div.whiteBox {
+                 display: inline-block;
+                 width: 230px;
+                 height: 150px;
+                 background-color: white;
+                 margin: 0px 5x;
+                 overflow: hidden;
+
+             }
+             div.boxesImage2 {
+                 text-align: center;
+                 width: 900px;
+                 height: 200px;
+                 
+             }
+             div.finalPara {
+                 width: 900px;
+                 height: 500px;
+                 background-color: white ;
+                 text-align: center;
+             }
+             div.final1 {
+                height: 50px;
+                padding-top: 30px;
+                box-sizing: border-box;
+                font-size: small;
+             }
+             div.final2 {
+                 font-size: smaller;
+                 padding: 20px 100px 0 100px;
+                 box-sizing: border-box;
+             }
+             div.innerBox {
+                 width: 30px;
+                 height: 30px;
+                 margin: 10px 0 0 100px;
+                 box-sizing: border-box;
+                 background-color: white;
+                 overflow: hidden;
+                 text-align: center;
+             }
+             div.innerBox img {
+                 width: 100%;
+                 height: 100%;
+             }
+
+             div.innerBox2 {
+                height: 30px;
+                width: 230px;
+                margin-top: 8px;
+                box-sizing: border-box;
+                text-align: center;
+                font-size: 18px;
+                
+             }
+             div.innerBox3 {
+                 height: 50px;
+                 width: 230px;
+                 padding: 0px 15px;
+                 box-sizing: border-box;
+                 text-align: center;
+                 font-size: 12px;                 
+             }
+             div.lastBox{
+                display: inline-block;
+                 width: 270px;
+                 height: 200px;
+                 background-color: white;
+                 margin-right: 10px;
+                 border-radius: 5px;
+                 box-shadow: 2px 2px 10px black;
+                 overflow: hidden;
+             }
+             div.commentBox {
+                 width: 50px;
+                 height: 50px;
+                 padding: 10px 0px 0 30px;
+                 background-color: white;
+                 overflow: hidden;
+                 text-align: left;
+             }
+             div.commentBox img {
+                 width: 100%;
+                 height: 100%;
+             }
+             div.commentBox3 {
+                height: 30px;
+                width: 230px;
+                margin-top: 8px;
+                box-sizing: border-box;
+                text-align: left;
+                font-size: 15px;
+                padding: 10px 0px 0 30px;
+             }
+             div.commentBox2 {
+                height: 30px;
+                width: 230px;
+                box-sizing: border-box;
+                text-align: left;
+                font-size: 18px;
+                padding: 40px 0px 0 30px;
+             }                 
+
+
+
+
+
+             
+             
+
+           
+            
+
+
+
+
+
+        </style>
+
+    </header>
+    <body>
+        <div id="container">
+            <nav>
+                <h1>Relap</h1>
+
+                <ul>
+                    <li>Home</li>
+                    <li>Features</li>
+                    <li>Work</li>
+                    <li>About</li>
+                    <li>People</li>
+                    <li>News</li>
+                </ul>
+
+                <div class="contact-button">
+                    <p>Contact Us</p>
+                </div>
+            </nav>
+
+           <div class="content1">
+                   
+               <div class="content-left">
+                   <h1 class="Title">Omnis <br/>Volupts</h1>
+                   <p class="para-1">Ut ut blandit turpis, at interdum ante. Maecenas a molestie nulla, nec dignissim est. Vestibulum ut luctus eros. In eget laoreet purus. Aenean quis pretium elit. Sed varius est quam, ac interdum orci tristique eu. Cras magna enim, euismod id ante ac, fermentum porttitor dui. Aenean et lectus lacinia odio semper lobortis pulvinar quis nisi. Proin commodo ligula a tortor fringilla, id gravida enim iaculis.</p>
+                   <div class="exploreButton">
+                       <p>Explore</p>
+                   </div>
+                    
+               </div>
+               <div class="content-right">
+                <div class = "bannerPic">
+                    <img src="day2_challanges/day2_challanges/images/banner_bg.png">  
+                  
+                </div>
+               </div>
+                    
+           </div>
+
+           <div class="content2">
+               <div class="content2-left">
+                   <h5>Nisi ut alluqid</h5>
+                    <h3>Ullam corpius suspcit</h3>
+                </div>
+
+                <div class="content2-right">  
+                    <p class="para2">Aliquam urna lectus, scelerisque in finibus a, consectetur id augue. Integer ante enim, lacinia ut augue vel, rutrum maximus nisl. Cras pulvinar a mi nec hendrerit. Phasellus in gravida ipsum. Donec tempus porttitor urna, id posuere nibh pellentesque sed. Nam hendrerit diam vel dolor pulvinar, at interdum erat sollicitudin. Cras hendrerit eget lorem feugiat cursus. Nam finibus pulvinar libero, nec commodo erat dignissim vitae. Ut scelerisque augue et rhoncus facilisis. Curabitur semper quis lacus vitae efficitur. Mauris a sodales velit. Mauris ut sagittis nibh.</p>
+                </div>  
+                   
+               
+           </div>
+
+                <nav class="listTwo">
+                <ul>
+                   <li>Quis Anthem</li>
+                   <li>Reprehensive</li>
+                   <li>Volcano</li>
+                   <li>Moquito</li>
+                   <li>Conquesitor</li>
+                </ul>
+
+                <div class="threePic">
+                    <div class="whitePic">
+                        <img src="day2_challanges/day2_challanges/images/gallery_1.png">
+                    </div>
+                    <div class="whitePic">
+                        <img src="day2_challanges/day2_challanges/images/gallery_2.png">
+                    </div>
+                    <div class="whitePic">
+                        <img src="day2_challanges/day2_challanges/images/gallery_3.png">
+                    </div>
+                </div>
+                </nav>
+            
+            <div class="bluePara">
+                
+                <div class="blueLeft">
+                    <img src="day2_challanges/day2_challanges/images/about_img.png">
+
+                </div>
+                <div class="blueRight">
+                    <p>Repellendous</p> <br/>
+                    <h4>Tempeour Hidiorus</h4><br/>
+                    <p>Vivamus eleifend bibendum viverra. Fusce ac erat varius, fringilla leo in, efficitur est. Nulla facilisi. Praesent congue dignissim enim, vitae scelerisque magna. Vivamus sodales orci vel interdum rutrum. </p>
+
+                </div>
+
+            </div>
+
+            <div class="boxPara">
+                <div class="fugiat"> <h2>Fugiat quo</h2>
+                </div>
+                <div class="aliquam">
+                <p>Aliquam urna lectus, scelerisque in finibus a, consectetur id augue. <br/> Cras pulvinar a mi nec hendrerit. Phasellus in gravida ipsum.</p>
+                </div>
+
+                <div class="boxesImage">
+                    <div class="whiteBox">
+                        <div class="innerBox">
+                            <img src="day2_challanges/day2_challanges/images/icon_1.png">
+
+                        </div>
+                        <div class="innerBox2">
+                            <h4>Consequuntur</h4>   
+                        </div>
+                        <div class="innerBox3">
+                            <p>Enim episum volupituil quia volupas sit aspernayd asd adr tur adit au</p>
+                        </div>
+
+                    </div>
+                    <div class="whiteBox">
+                        <div class="innerBox">
+                            <img src="day2_challanges/day2_challanges/images/icon_2.png">
+
+                        </div>
+                        <div class="innerBox2">
+                            <h4>Consequuntur</h4>   
+                        </div>
+                        <div class="innerBox3">
+                            <p>Enim episum volupituil quia volupas sit aspernayd asd adr tur adit au</p>
+                        </div>
+
+                    </div>
+                    <div class="whiteBox">
+                        <div class="innerBox">
+                            <img src="day2_challanges/day2_challanges/images/icon_3.png">
+
+                        </div>
+                        <div class="innerBox2">
+                            <h4>Consequuntur</h4>   
+                        </div>
+                        <div class="innerBox3">
+                            <p>Enim episum volupituil quia volupas sit aspernayd asd adr tur adit au</p>
+
+                    </div>
+
+                </div>
+                <div class="boxesImage2">
+                    <div class="whiteBox">
+                        <div class="innerBox">
+                            <img src="day2_challanges/day2_challanges/images/icon_4.png">
+
+                        </div>
+                        <div class="innerBox2">
+                            <h4>Consequuntur</h4>   
+                        </div>
+                        <div class="innerBox3">
+                            <p>Enim episum volupituil quia volupas sit aspernayd asd adr tur adit au</p>
+                        </div>
+
+                    </div>
+                    <div class="whiteBox">
+                        <div class="innerBox">
+                            <img src="day2_challanges/day2_challanges/images/icon_5.png">
+
+                        </div>
+                        <div class="innerBox2">
+                            <h4>Consequuntur</h4>   
+                        </div>
+                        <div class="innerBox3">
+                            <p>Enim episum volupituil quia volupas sit aspernayd asd adr tur adit au</p>
+                        </div>
+
+                    </div>
+                    <div class="whiteBox">
+                        <div class="innerBox">
+                            <img src="day2_challanges/day2_challanges/images/icon_6.png">
+
+                        </div>
+                        <div class="innerBox2">
+                            <h4>Consequuntur</h4>   
+                        </div>
+                        <div class="innerBox3">
+                            <p>Enim episum volupituil quia volupas sit aspernayd asd adr tur adit au</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                </div>
+            </div>
+
+            <div class="finalPara"> 
+                <div class="final1"> <h2>Testimonial</h2>
+                </div>
+                <div class="final2">
+                <p>Aliquam urna lectus, scelerisque in finibus a, consectetur id augue. <br/> Cras pulvinar a mi nec hendrerit. Phasellus in gravida ipsum.</p>
+                </div>
+                <div class="boxesImage">
+                    <div class="lastBox">
+                        <div class="commentBox">
+                            <img src="day2_challanges/day2_challanges/images/profile_1.png">
+
+                        </div>
+                        <div class="commentBox3">
+                            <p>"Enim episum volupituil quia volupas sit aspernayd asd adr tur adit au"</p>
+                        </div>
+                        <div class="commentBox2">
+                            <h4>Consequuntur</h4>   
+                        </div>
+
+                    </div>
+                    <div class="lastBox">
+                        <div class="commentBox">
+                            <img src="day2_challanges/day2_challanges/images/profile_2.png">
+
+                        </div>
+                        <div class="commentBox3">
+                            <p>"Enim episum volupituil quia volupas sit aspernayd asd adr tur adit au"</p>
+                        </div>
+                        <div class="commentBox2">
+                            <h4>Consequuntur</h4>   
+                        </div>
+
+                    </div>
+                    <div class="lastBox">
+                        <div class="commentBox">
+                            <img src="day2_challanges/day2_challanges/images/profile_3.png">
+
+                        </div>
+                        <div class="commentBox3">
+                            <p>"Enim episum volupituil quia volupas sit aspernayd asd adr tur adit au"</p>
+                        </div>
+                        <div class="commentBox2">
+                            <h4>Consequuntur</h4>   
+                        </div>
+
+                    </div>
+
+                </div> 
+
+            </div>
+
+
+                
+
+            
+               
+
+        </div>
+
+    </body>
+</html>
